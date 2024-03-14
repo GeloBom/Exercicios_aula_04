@@ -8,12 +8,13 @@
             Console.ReadKey();
             
             double salarioBase = int.Parse(getInput("informe seu salario base:"));
-            double vendas = int.Parse(getInput("informe seu salario base:"));
-            double comissaoFixa = int.Parse(getInput("informe seu salario base:"));
+            double vendas = int.Parse(getInput("informe o valor total de vendas nesse mês"));
+            double comissaoFixa = int.Parse(getInput("informa a porcentagem de comissão fixa:"));
 
             double salarioTotal = salarioBase + (vendas * (comissaoFixa / 100));
            
             Console.WriteLine($"Seu salário total é de:{salarioTotal:F2}R$");
+            Console.ReadKey();
             
             string getInput(string mensagem)
             {
