@@ -7,9 +7,9 @@
             Console.WriteLine("Bem vindo ao programa de calculo de salario mensal!\nDigite Qualquer tecla para continuar...");
             Console.ReadKey();
             
-            double salarioBase = int.Parse(getInput("informe seu salario base:"));
-            double vendas = int.Parse(getInput("informe o valor total de vendas nesse mês"));
-            double comissaoFixa = int.Parse(getInput("informa a porcentagem de comissão fixa:"));
+            double salarioBase = double.Parse(getInput("informe seu salario base:"));
+            double vendas = double.Parse(getInput("informe o valor total de vendas nesse mês"));
+            double comissaoFixa = double.Parse(getInput("informa a porcentagem de comissão fixa:"));
 
             double salarioTotal = salarioBase + (vendas * (comissaoFixa / 100));
            
