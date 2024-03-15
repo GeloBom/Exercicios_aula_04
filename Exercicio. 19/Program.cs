@@ -13,7 +13,7 @@
 
             double alturaM = double.Parse(GetInput("Por favor, informe a sua altura em metros para prosseguir:"));
             Console.Clear();
-            
+
             Console.WriteLine($"O peso informado foi de: {pesoKg}Kg e sua altura é de: {alturaM} m.\nPara calcular seu IMC (Índice de Massa Corporal), pressione qualquer tecla...\n");
             Console.ReadKey();
             Console.Clear();
@@ -62,8 +62,6 @@
                 string userInput = Console.ReadLine();
                 return userInput;
             }
-
-
         }
     }
 }
