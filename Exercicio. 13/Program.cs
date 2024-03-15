@@ -1,6 +1,4 @@
-﻿using System.Xml;
-
-namespace Exercicio._13
+﻿namespace Exercicio._13
 {
     internal class Program
     {
