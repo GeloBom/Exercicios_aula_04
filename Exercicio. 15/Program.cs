@@ -1,4 +1,4 @@
-﻿namespace Exercicios_aula_04
+﻿namespace Exercicio._15
 {
     internal class Program
     {
@@ -7,10 +7,10 @@
             Console.WriteLine("Bem vindo ao programa de conversao de Cº para Fº!\nDigite qualquer tecla para continuar...");
             Console.ReadKey();
 
-            int valorCelcius = int.Parse(getInput("informe o valor em Cº para a conversao (Fº"));
+            double valorCelcius = double.Parse(getInput("informe o valor em Cº para a conversao (Fº)"));
             double resultadoConversao = (valorCelcius * 9 / 5) + 32;
 
-            Console.WriteLine($"Seu valor em Fº é de:{resultadoConversao:F2},Fº");
+            Console.WriteLine($"Seu valor em Fº é de:{resultadoConversao}Fº");
 
             string getInput(string mensagem)
             {
