@@ -4,13 +4,14 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Bem vindo ao programa de conversao de Cº para Fº!\nDigite qualquer tecla para continuar...");
+            Console.WriteLine("Bem vindo ao programa de conversao de Fº para Cº!\nDigite qualquer tecla para continuar...");
             Console.ReadKey();
 
-            int valorCelcius = int.Parse(getInput("informe o valor em Cº para a conversao (Fº"));
-            double resultadoConversao = (valorCelcius * 9 / 5) + 32;
+            int valorFahrenheit = int.Parse(getInput("informe o valor em Fº para a conversao (Cº"));
+            
+            double resultadoConversao = 9 / 5 * (valorFahrenheit - 32);
 
-            Console.WriteLine($"Seu valor em Fº é de:{resultadoConversao:F2},Fº");
+            Console.WriteLine($"Seu valor em Cº é de:{resultadoConversao:F2},Cº");
 
             string getInput(string mensagem)
             {
