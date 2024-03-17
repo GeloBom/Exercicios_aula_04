@@ -56,7 +56,7 @@
             Console.WriteLine($"Seu IMC é de: {indiceMassaCorporal:F2}. Isso é classificado como: {resultadoIMC}\n Digite qualquer tecla para sair do programa...");
             Console.ReadKey();
 
-            static string GetInput(string mensagem)
+            string GetInput(string mensagem)
             {
                 Console.WriteLine(mensagem);
                 string userInput = Console.ReadLine();
