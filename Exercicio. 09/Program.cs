@@ -11,8 +11,8 @@
             double nota02 = double.Parse(getInput("informe a segunda nota para prosseguir"));
             double nota03 = double.Parse(getInput("informe a terceira nota para prosseguir"));
             double nota04 = double.Parse(getInput("informe a quarta nota para prosseguir"));
-           
-            double mediaAluno = ((nota01 + nota02 + nota03 + nota04)/4);
+
+            double mediaAluno = 4 / ((1 / nota01) + (1 / nota02) + (1 / nota03) + (1 / nota04));
 
             Console.WriteLine($"A media do aluno é de:{mediaAluno}");
             Console.ReadKey();  

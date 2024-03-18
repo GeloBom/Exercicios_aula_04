@@ -23,16 +23,17 @@
 
                 double consumoCombustivel = double.Parse(GetInput("Por favor, insira a quantidade de combustivel usado durante o trajeto:"));
                 Console.Clear();
-                Console.WriteLine($"Os valores informados foram de:\n- Quilometragem Inicial: {kminicial.ToString("F")}km\n- Quilometragem Final: {kmfinal.ToString("F")} km\n- Consumo de combustivel: {consumoCombustivel.ToString("F")} km");
+                Console.WriteLine($"Os valores informados foram de:\n- Quilometragem Inicial: {kminicial:F}km\n- Quilometragem Final: {kmfinal:F} km\n- Consumo de combustivel: {consumoCombustivel:F} km");
 
                 double resultado = (kminicial - kmfinal) / consumoCombustivel;
-                Console.WriteLine($"\nO consumo de combustivel por km é de: {consumoCombustivel.ToString("F")} km/l\n\n\nDigite uma tecla para efetuar a operação novamente...");
+                Console.WriteLine($"\nO consumo de combustivel por km é de: {consumoCombustivel:F} km/l\n\n\nDigite uma tecla para efetuar a operação novamente...");
                 Console.ReadKey();
                 Console.Clear();
 
 
             }
-            string GetInput(string mensagem)
+
+            static string GetInput(string mensagem)
             {
                 Console.WriteLine(mensagem);
                 string userInput = Console.ReadLine();
