@@ -2,11 +2,11 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+         void Main(string[] args)
         {
             while (true)
             {
-                Console.WriteLine("Bem-vindo ao Programa de Ordenação Decrescente!\nPressione qualquer tecla para continuar...");
+                Console.WriteLine("Bem-vindo ao Programa de reconhecimento de números ímpares!\nPressione qualquer tecla para continuar...");
                 Console.ReadKey();
                 Console.Clear();
 
