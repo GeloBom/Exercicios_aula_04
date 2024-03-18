@@ -23,7 +23,7 @@
             }
         }
 
-         string GetInput(string mensagem)
+        static string GetInput(string mensagem)
         {
             Console.WriteLine(mensagem);
             string userInput = Console.ReadLine();
