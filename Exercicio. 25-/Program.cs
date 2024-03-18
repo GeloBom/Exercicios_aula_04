@@ -4,6 +4,10 @@
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Bem-vindo ao Programa de calculo de fatorial!\nPressione qualquer tecla para continuar...");
+            Console.ReadKey();
+            Console.Clear();
+           
             int numeroInput = int.Parse(GetInput("Por favor, insira o número para calcular o fatorial:"));
 
             if (numeroInput < 0)
