@@ -22,7 +22,7 @@
 
             Console.WriteLine($"O valor de C é: {numeroC}");
 
-            string GetInput(string mensagem)
+            string getInput(string mensagem)
             {
                 Console.WriteLine(mensagem);
                 string userInput = Console.ReadLine();
