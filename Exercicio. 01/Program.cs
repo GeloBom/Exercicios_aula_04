@@ -6,20 +6,33 @@
         {
             Console.WriteLine("Bem vindo ao programa para calculo do volume de retangulo!\n Digite qualquer tecla para continuar...");
             Console.ReadKey();
-            
-            double valorComprimento = double.Parse(getInput("informe o valor de comprimento em (m) para prosseguir"));
-            double valorAltura = double.Parse(getInput("informe o valor de altura em (m) para prosseguir"));
-            double valorLargura = double.Parse(getInput("informe o valor largura em (m) para prosseguir"));
-            double ResultadoOperação = (valorComprimento * valorAltura * valorLargura);
 
-            Console.WriteLine($"O volume do retangulo é de:{ResultadoOperação:F2}m³");
+            double comprimento = ObterValor("informe o valor de comprimento em (m) para prosseguir");
+            double altura = ObterValor("informe o valor de altura em (m) para prosseguir");
+            double largura = ObterValor("informe o valor largura em (m) para prosseguir");
 
-            string getInput(string mensagem)
+            double volume = CalcularVolume(comprimento, altura, largura);
+
+            Console.WriteLine($"O volume do retângulo é de: {volume:F2} m³");
+
+        }
+
+        static double ObterValor(string mensagem)
+        {
+            Console.WriteLine(mensagem);
+            double valor;
+
+            while (!double.TryParse(Console.ReadLine(), out valor) || valor < 0)
             {
-                Console.WriteLine(mensagem);
-                string userInput = Console.ReadLine();
-                return userInput;
+                Console.WriteLine("valor inválido.Por favor, insira um valor válido maior que zero.");
             }
+            return valor;
+        }
+
+        static double CalcularVolume(double comprimento, double altura, double largura)
+        {
+            double volume= comprimento * altura * largura;
+            return volume;
         }
     }
 }
