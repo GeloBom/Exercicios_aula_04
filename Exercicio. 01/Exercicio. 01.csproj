@@ -11,4 +11,10 @@
     <ProjectReference Include="..\Exercicio 0.2\Exercicio 0.2.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Exercicio 0.1">
+      <HintPath>obj\Debug\net8.0\Exercicio 0.1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
